@@ -1,0 +1,11 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.divbar{
+    display: block;
+    flex-direction: right;
+}
+.link{
+    color: black;
+}

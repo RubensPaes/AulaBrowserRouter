@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
-
+import '../global.css'
 export default function Header(){
 return(
     <header>
-        <nav>
+        <div  className="divabar">
+        <nav className="navbar">
        <ul>
-        <li><Link to="/produto">Produtos</Link></li>
+        <li className="listinhas"><Link to="/produto">Produtos</Link></li>
         <li><Link to="/oferta">Ofertas</Link></li>
        </ul>
        </nav>
+       </div>
     </header>
 )
 }

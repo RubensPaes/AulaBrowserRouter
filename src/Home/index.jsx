@@ -1,14 +1,11 @@
 import Header from "../componentes/Header";
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import carouselum from './images/carouselum.jpeg';
-import carouseldois from './images/carouseldois.jpeg';
-import carouseltres from './images/carouseltres.jpeg';
-import um from './images/um.gif';
-import doiss from './images/doiss.gif';
+import '../global.css'
 export default function Home(){
     return(
         <>
+           <Header/>
         <Carousel
         infiniteLoop
         useKeyboardArrows
@@ -17,19 +14,18 @@ export default function Home(){
         showArrows={true}
         showStatus={false}
         showThumbs={false}
-        dynamicHeight={false}
+        dynamicHeight
         >
              <div>
-        <img src={um} alt="imagem 1" style={{ width: '100%', height: 'auto', objectFit: 'cover' }}/>
+        <img src='/um.gif' alt="imagem 1"/>
         </div>
       <div>
-      <img src={doiss} alt="imagem 2" style={{ width: '100%', height: 'auto', objectFit: 'cover' }}/>
+      <img src='/carouselum.jpeg' alt="imagem 2"/>
       </div>
       <div>
-      <img src={carouseltres} alt="imagem 3" style={{ width: '100%', height: 'auto', objectFit: 'cover' }}/>
+      <img src='/carouseltres.jpeg' alt="imagem 3"/>
       </div>
         </Carousel>
-        <Header/>
         </>
     )
 }
