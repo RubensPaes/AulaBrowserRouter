@@ -1,11 +1,26 @@
-.navbar{
-    display: flex;
-    flex-direction: column;
+.cabeça{
+    padding: 25px;
+    background-color: red;
 }
-.divbar{
+.listinhas{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-
 }
-.link{
-    color: black;
+.lin{
+    margin-right: 30px;
+}
+.linhinha{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.linhinha:hover{
+    color: blue;
+}
+.divdoheader{
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-image: url("/logo.jpeg");
 }

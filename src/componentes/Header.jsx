@@ -2,25 +2,19 @@ import { Link } from "react-router-dom";
 import '../global.css'
 export default function Header(){
 return(
-    <header>
-        <div  className="divabar">
+    <header className="cabeça">
         <nav className="navbar">
        <ul className="listinhas">
-        <li><Link to="/produto">Produtos</Link></li>
-        <li><Link to="/oferta">Ofertas</Link></li>
+       <li>
+            <div className="divdoheader"></div>
+            </li>
+       <li className="lin"><Link to="/" className="linhinha">Jadson Carros</Link></li>
+       <li className="lin"><Link to="/" className="linhinha">Home</Link></li>
+        <li className="lin"><Link to="/produto" className="linhinha">Produtos</Link></li>
+        <li className="lin"><Link to="/oferta" className="linhinha">Ofertas</Link></li>
        </ul>
        </nav>
-       </div>
     </header>
 )
 }
 
-// <Link to="/">
-//<p>Home</p>
-//</Link>
-//<Link to="/produto">
-//<p>produto</p>
-//</Link>
-//<Link to="/oferta">
-    //<p>Ofertas</p>
-//</Link>

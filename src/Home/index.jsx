@@ -28,7 +28,7 @@ export default function Home(){
         dynamicHeight
         >
              <div>
-        <img src='/um.gif' alt="imagem 1"/>
+        <img src='/carrocarrousel.jpeg' alt="imagem 1"/>
         </div>
       <div>
       <img src='/carouselum.jpeg' alt="imagem 2"/>
