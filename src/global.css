@@ -3,8 +3,8 @@
     flex-direction: column;
 }
 .divbar{
-    display: block;
-    flex-direction: right;
+    display: flex;
+
 }
 .link{
     color: black;

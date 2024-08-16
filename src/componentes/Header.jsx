@@ -5,8 +5,8 @@ return(
     <header>
         <div  className="divabar">
         <nav className="navbar">
-       <ul>
-        <li className="listinhas"><Link to="/produto">Produtos</Link></li>
+       <ul className="listinhas">
+        <li><Link to="/produto">Produtos</Link></li>
         <li><Link to="/oferta">Ofertas</Link></li>
        </ul>
        </nav>
