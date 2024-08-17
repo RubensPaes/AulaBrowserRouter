@@ -1,12 +1,24 @@
+/*estlização do header*/
 .cabeça{
     padding: 25px;
-    background-color: red;
+    background-color:  #302b2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 .listinhas{
-  list-style-type: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 .lin{
     margin-right: 30px;
@@ -20,7 +32,44 @@
     color: blue;
 }
 .divdoheader{
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-image: url("/logo.jpeg");
+    width: 100%; 
+    height: 120px; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/logo.jpeg");
+}
+
+/*estlização dos Carros*/
+
+
+.carroprincipal{
+    display: flex;
+    width: 100%;
+    min-height: 170vh;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.carrodosprodutos{
+width: 50%;
+height: 50vh;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 5%;
+margin: 1rem;
+align-items: center;
+justify-content: center;
+}
+.carroprincipal div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.carrodosprodutos div div{
+display: flex;
+flex-direction: row;
+gap: 10px;
+
 }

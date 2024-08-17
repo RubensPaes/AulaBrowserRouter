@@ -4,11 +4,9 @@ export default function Header(){
 return(
     <header className="cabeça">
         <nav className="navbar">
+        <div className="divdoheader"></div>
        <ul className="listinhas">
-       <li>
-            <div className="divdoheader"></div>
-            </li>
-       <li className="lin"><Link to="/" className="linhinha">Jadson Carros</Link></li>
+       <li className="lin"><Link to="/" className="linhinha">JadsonCarros</Link></li>
        <li className="lin"><Link to="/" className="linhinha">Home</Link></li>
         <li className="lin"><Link to="/produto" className="linhinha">Produtos</Link></li>
         <li className="lin"><Link to="/oferta" className="linhinha">Ofertas</Link></li>
