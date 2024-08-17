@@ -42,34 +42,39 @@
 /*estlização dos Carros*/
 
 
-.carroprincipal{
+.carroprincipal {
     display: flex;
     width: 100%;
     min-height: 170vh;
-    flex-direction: row;
+    flex-direction: column; /* Altera para 'column' se 'carroprincipal' deve empilhar seus filhos */
     justify-content: space-between;
-   
 }
-.carrodosprodutos{
-width: 50%;
-height: 50vh;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 5%;
-margin: 1rem;
-align-items: center;
-justify-content: center;
-}
-.carroprincipal div{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-.carrodosprodutos div div{
-display: flex;
-flex-direction: row;
-gap: 10px;
 
+.carrodosprodutos {
+    width: 100%; /* Ajusta a largura para 100% do container */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Ajusta o espaçamento entre os itens */
+    margin: 1rem auto; /* Centraliza e adiciona margem ao redor */
+    justify-content: center; /* Centraliza os itens no container */
+}
+
+.carrodosprodutos div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.carrodosprodutos img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem se encaixe bem no container */
+}
+
+.carrodosprodutos p {
+    margin: 0.5rem 0;
+    text-align: center;
 }

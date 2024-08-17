@@ -1,5 +1,5 @@
 import Header from "../componentes/Header";
-import ListarProdutos from "../componentes/ListarProdutos";
+import ListarProdutos from '../componentes/ListarProdutos';
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
