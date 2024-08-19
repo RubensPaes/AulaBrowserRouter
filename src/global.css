@@ -46,17 +46,17 @@
     display: flex;
     width: 100%;
     min-height: 170vh;
-    flex-direction: column; /* Altera para 'column' se 'carroprincipal' deve empilhar seus filhos */
+    flex-direction: column; 
     justify-content: space-between;
 }
 
 .carrodosprodutos {
-    width: 100%; /* Ajusta a largura para 100% do container */
+    width: 100%; 
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* Ajusta o espaçamento entre os itens */
-    margin: 1rem auto; /* Centraliza e adiciona margem ao redor */
-    justify-content: center; /* Centraliza os itens no container */
+    gap: 1rem;
+    margin: 1rem auto; 
+    justify-content: center; 
 }
 
 .carrodosprodutos div {
@@ -71,10 +71,74 @@
 .carrodosprodutos img {
     max-width: 100%;
     height: auto;
-    object-fit: cover; /* Garante que a imagem se encaixe bem no container */
+    object-fit: cover; 
 }
-
 .carrodosprodutos p {
     margin: 0.5rem 0;
     text-align: center;
 }
+.pdoscarros{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Estilização do Footer */
+.pé{
+    background-color: #302b2c;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .divmaedofooter{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:  20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .divdosescla {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .divdosescla h3,
+  .divdosescla h4 {
+    margin-bottom: 10px;
+  }
+  
+  .divdosescla p {
+    margin: 5px 0;
+    color: white;
+  }
+  .divdoscontatos {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+  .divdosicons {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: center; 
+    padding-top: 20px; 
+  }
+  
+  .divdosicons a {
+    margin-right: 20px;
+  }
+  
+  .divdosicons img {
+    width: 30px;
+    margin: 0 5px;
+  }
+  
+  .empresaproria {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
