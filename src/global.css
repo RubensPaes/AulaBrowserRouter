@@ -81,7 +81,22 @@
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*estlização dos bot'oes*/
+.butao {
+  background-color: #302b2c; 
+  color: white;
+  border: none;
+  border-radius: 40%; 
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s; 
+}
 
+.butao:hover {
+  transform: scale(1.1); 
+  background-color: red;
+}
 
 /* Estilização do Footer */
 .pé{
