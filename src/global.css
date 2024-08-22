@@ -1,4 +1,19 @@
+/*Arrumando as bordas, * = seletor universal*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
 /*estlização do header*/
+
 .cabeça{
     padding: 25px;
     background-color:  #302b2c;
@@ -156,4 +171,31 @@
     text-align: center;
     padding-top: 20px;
   }
-  
+  /* Deixando o Header responsivo pelo fato de so o mesmo necessitar */
+  @media only screen and (max-width: 450px) {
+    .cabeça {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .divdoheader {
+        height: 80px; 
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .listinhas {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lin {
+        margin: 10px 0; 
+      }
+
+    .linhinha {
+        font-size: 18px;  }
+}
