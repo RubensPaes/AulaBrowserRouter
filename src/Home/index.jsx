@@ -8,11 +8,11 @@ import '../global.css';
 
 export default function Home() {
   const [listaCarros, setCarros] = useState([
-    {id: 1, nome: "Fusca", preço: "R$: 50000,00", imagem: "/fusca.jpeg", especificações: [" modelo: Fusca 1300 ", " motor: 1300 ", " combustivel: gasolina "]},
-    {id: 2, nome: "Del Rey", preço: "R$: 60000,00", imagem: "/imgdelrey.jpeg", especificações: [" modelo: Delrey guia ", " motor: AP 1.8 ", " combustivel: gasolina "] },
-    {id: 3, nome: "Opala", preço: "R$: 54000,00", imagem: "/opala.jpeg", especificações: [" modelo: Opala Diplomata 4.1 ", " motor: 8 por 1 ", " combustivel: gasolina "]},
-    {id: 4, nome: "Uno Duas Portas", preço: "R$: 100000,00", imagem: "/unod.jpeg", ano: 2009, especificações: [" modelo: Uno Mille ", " motor: 1.0 ", " combustivel: gasolina e álcoo "] },
-    {id: 5, nome: "Brasilia Amarela", preço: "R$: 35000,00", imagem: "/brasilia.jpeg", ano: 1979, especificações: [" modelo: Volkswagen Brasilia ", " motor: 1.6L ", " combustivel: gasolina "] }
+    {id: 1, nome: "Fusca", preço: "R$: 50000,00", imagem: "/fusca.jpeg", cor: "branco", especificações: [" modelo: Fusca 1300 ", " motor: 1300 ", " combustivel: gasolina "]},
+    {id: 2, nome: "Del Rey", preço: "R$: 60000,00", imagem: "/imgdelrey.jpeg", cor: "vermelho", especificações: [" modelo: Delrey guia ", " motor: AP 1.8 ", " combustivel: gasolina "] },
+    {id: 3, nome: "Opala", preço: "R$: 54000,00", imagem: "/opala.jpeg", cor: "branco", especificações: [" modelo: Opala Diplomata 4.1 ", " motor: 8 por 1 ", " combustivel: gasolina "]},
+    {id: 4, nome: "Uno Duas Portas", preço: "R$: 100000,00", imagem: "/unod.jpeg", cor: "branco", especificações: [" modelo: Uno Mille ", " motor: 1.0 ", " combustivel: gasolina e álcoo "] },
+    {id: 5, nome: "Brasilia Amarela", preço: "R$: 35000,00", imagem: "/brasilia.jpeg", cor: "amarelo", especificações: [" modelo: Volkswagen Brasilia ", " motor: 1.6L ", " combustivel: gasolina "] }
   ]);
 
   const [listadosCarros, setListadosCarros] = useState([]);
@@ -54,7 +54,6 @@ export default function Home() {
               imagem={carro.imagem}
               nome={carro.nome}
               preço={carro.preço}
-              especificações={carro.especificações}
               adicionarCarro={() => adicionarCarro(carro)}
             />
           ))}
