@@ -1,12 +1,13 @@
 /*Arrumando as bordas, * = seletor universal*/
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -14,188 +15,201 @@ html, body {
 
 /*estlização do header*/
 
-.cabeça{
-    padding: 25px;
-    background-color:  #302b2c;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cabeça {
+  padding: 25px;
+  background-color: #302b2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .navbar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
-.listinhas{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
+
+.listinhas {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
-.lin{
-    margin-right: 30px;
+
+.lin {
+  margin-right: 30px;
 }
-.linhinha{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+
+.linhinha {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
-.linhinha:hover{
-    color: blue;
+
+.linhinha:hover {
+  color: blue;
 }
-.divdoheader{
-    width: 100%; 
-    height: 120px; 
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url("/logo.jpeg");
+
+.divdoheader {
+  width: 100%;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("/logo.jpeg");
 }
 
 /*estlização dos Carros*/
 
 
 .carroprincipal {
-    display: flex;
-    width: 100%;
-    min-height: 170vh;
-    flex-direction: column; 
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  min-height: 170vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .carrodosprodutos {
-    width: 100%; 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 1rem auto; 
-    justify-content: center; 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem auto;
+  justify-content: center;
 }
 
 .carrodosprodutos div {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .carrodosprodutos img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
 .carrodosprodutos p {
-    margin: 0.5rem 0;
-    text-align: center;
+  margin: 0.5rem 0;
+  text-align: center;
 }
-.pdoscarros{
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.pdoscarros {
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 /*estlização dos bot'oes*/
 .butao {
-  background-color: #302b2c; 
+  background-color: #302b2c;
   color: white;
   border: none;
-  border-radius: 40%; 
+  border-radius: 40px;
   padding: 15px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s; 
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .butao:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   background-color: red;
 }
 
 /* Estilização do Footer */
-.pé{
-    background-color: #302b2c;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .divmaedofooter{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:  20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .divdosescla {
-    flex: 1;
-    min-width: 250px;
-    margin-bottom: 20px;
-  }
-  
-  .divdosescla h3,
-  .divdosescla h4 {
-    margin-bottom: 10px;
-  }
-  
-  .divdosescla p {
-    margin: 5px 0;
-    color: white;
-  }
-  .divdoscontatos {
-    flex: 1;
-    min-width: 250px;
-    margin-bottom: 20px;
-    text-align: center; 
-  }
-  .divdosicons {
-    flex: 1;
-    min-width: 250px;
-    margin-bottom: 20px;
-    text-align: center; 
-    padding-top: 20px; 
-  }
-  
-  .divdosicons a {
-    margin-right: 20px;
-  }
-  
-  .divdosicons img {
-    width: 30px;
-    margin: 0 5px;
-  }
-  
-  .empresaproria {
-    text-align: center;
-    padding-top: 20px;
-  }
-  /* Deixando o Header responsivo pelo fato de so o mesmo necessitar */
-  @media only screen and (max-width: 450px) {
-    .cabeça {
-        flex-direction: column;
-        padding: 15px;
-    }
+.pé {
+  background-color: #302b2c;
+  color: #fff;
+  padding: 20px 0;
+}
 
-    .divdoheader {
-        height: 80px; 
-    }
+.divmaedofooter {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.divdosescla {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
 
-    .listinhas {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.divdosescla h3,
+.divdosescla h4 {
+  margin-bottom: 10px;
+}
 
-    .lin {
-        margin: 10px 0; 
-      }
+.divdosescla p {
+  margin: 5px 0;
+  color: white;
+}
 
-    .linhinha {
-        font-size: 18px;  }
+.divdoscontatos {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.divdosicons {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.divdosicons a {
+  margin-right: 20px;
+}
+
+.divdosicons img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.empresaproria {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Deixando o Header responsivo pelo fato de só o mesmo necessitar */
+@media only screen and (max-width: 450px) {
+  .cabeça {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .divdoheader {
+    height: 80px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listinhas {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lin {
+    margin: 10px 0;
+  }
+
+  .linhinha {
+    font-size: 18px;
+  }
 }
